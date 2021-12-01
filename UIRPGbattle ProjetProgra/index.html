@@ -22,10 +22,13 @@
        background-color: rgba(0,0,0,0);
        margin:2px;
        display: flex;
-       justify-content: space-around;
        display: none;
-
     }
+    .action:hover{
+        background: white;
+
+
+
     .listclean {
         list-style:none;
         margin-left:0;
@@ -79,13 +82,13 @@
                 <th>action</th>
                 </tr>
                 <tr>
-                <td><label id="actionattack">Attack</label></td>
+                <td><label class="action" id="actionattack">Attack</label></td>
                 </tr>
                 <tr>
-                <td><label id="actionsort">Sort</label></td>
+                <td><label class="action" id="actionsort">Sort</label></td>
                 </tr>
                 <tr>
-                <td><label id="actionrepos">Repos</label></td>
+                <td><label class="action" id="actionrepos">Repos</label></td>
                 </tr>
             </table>
         </div>
