@@ -15,6 +15,8 @@ const CHAR_COLOR_ARRAY = ["green", "red", "blue", "yellow", "orange"];
 const HEROES_NAME = ["jojo", "kiki", "mimi", "pipo"]
 const CHAR_MANA = [13, 16, 18, 4];
 const COLONNE = { heroes: 200, monsters: 50 };
+const EXPLOSION_COLOR = ["red", "blue", "yellow", "orange"]
+
 // Code 
 class RPGGame {
 
@@ -100,7 +102,24 @@ class RPGGame {
             ctx.fillRect(rect.x, rect.y, rect.w, rect.h);
         }
     }
+
+
+    /*----------------------------------------------*/
+    static explosion() {
+        function getRandomArbitrary(min = 0, max = 4) {
+            return Math.random() * (max - min) + min;
+        }
+        for (let char of RPGGame.chars) {
+            ctx.fillStyle = this.EXPLOSION_COLOR[getRandomArbitrary];
+            char.randomAnimate();
+        }
+        //let rect = char.getCoord();
+        //ctx.fillRect(rect.x, rect.y, rect.w, rect.h);
+    }
 }
+
+
+
 
 /*----------------------------------------------*/
 console.log("LOADED !!!!");

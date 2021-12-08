@@ -50,10 +50,10 @@ export class RPGCharacter {
         return this.health;
     }
 
-    //randomAnimate() {
-    //this.x = this.x + Math.floor((Math.random() * 100));
-    //this.x = this.y + Math.floor((Math.random() * 100));
-    //}
+    randomAnimate() {
+        this.x = this.x + Math.floor((Math.random() * 100));
+        this.x = this.y + Math.floor((Math.random() * 100));
+    }
 
     move() {
 
