@@ -14,7 +14,7 @@ const MONSTER_START_X = 60;
 const CHAR_COLOR_ARRAY = ["green", "red", "blue", "yellow", "orange"];
 const HEROES_NAME = ["jojo", "kiki", "mimi", "pipo"]
 const CHAR_MANA = [13, 16, 18, 4];
-const COLONNE = { heroes: 500, monsters: 50 };
+const COLONNE = { heroes: 200, monsters: 50 };
 // Code 
 class RPGGame {
 
