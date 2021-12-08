@@ -8,7 +8,7 @@ import { RPGCharacter } from './character.js';
 
 // Defines characters and monsters here !!!
 const NBCHAR = 4;
-const NBMONSTERS = 1;
+const NBMONSTERS = 3;
 const CHAR_START_X = 400;
 const MONSTER_START_X = 60;
 const CHAR_COLOR_ARRAY = ["green", "red", "blue", "yellow", "orange"];
@@ -34,7 +34,7 @@ class RPGGame {
         }
         for (let i = 0; i < this.nbMonsters; i++) {
             this.monsters[i] = new RPGCharacter(); //
-            this.monsters[i].init("monster", COLONNE.monsters, 10 + (10 * i), 10 + i, 10 + i);
+            this.monsters[i].init("monster", COLONNE.monsters, 60 + (10 * i), 10 + i, 10 + i);
             this.monsters[i].setColor(CHAR_COLOR_ARRAY[0]);
             this.monsters[i].setName("Monstre " + (i + 1));
         }
