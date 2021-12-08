@@ -14,7 +14,7 @@ const MONSTER_START_X = 60;
 const CHAR_COLOR_ARRAY = ["green", "red", "blue", "yellow", "orange"];
 const HEROES_NAME = ["jojo", "kiki", "mimi", "pipo"]
 const CHAR_MANA = [13, 16, 18, 4];
-const COLONNE = { heroes: 200, monsters: 50 };
+const COLONNE = { heroes: 500, monsters: 50 };
 // Code 
 class RPGGame {
 
@@ -34,7 +34,7 @@ class RPGGame {
         }
         for (let i = 0; i < this.nbMonsters; i++) {
             this.monsters[i] = new RPGCharacter(); //
-            this.monsters[i].init("monster", COLONNE.monsters, 60 + (10 * i), 10 + i, 10 + i);
+            this.monsters[i].init("monster", COLONNE.monsters, 10 + (70 * i), 10 + i, 10 + i);
             this.monsters[i].setColor(CHAR_COLOR_ARRAY[0]);
             this.monsters[i].setName("Monstre " + (i + 1));
         }
